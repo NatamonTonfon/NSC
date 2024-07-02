@@ -38,14 +38,14 @@ from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 # metrics
 from sklearn.metrics import accuracy_score, f1_score, recall_score, precision_score
 from sklearn.metrics import classification_report, confusion_matrix
-#from sklearn.metrics import plot_confusion_matrix, auc, roc_curve, plot_roc_curve
+from sklearn.metrics import plot_confusion_matrix, auc, roc_curve, plot_roc_curve
 from sklearn.metrics import classification_report, confusion_matrix
 
-# import classifiers
-#from sklearn.linear_model import LogisticRegression
-#from sklearn.tree import DecisionTreeClassifier
-#from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, StackingClassifier
-#from sklearn.neighbors import KNeighborsClassifier
+import classifiers
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, StackingClassifier
+from sklearn.neighbors import KNeighborsClassifier
 
 # tensorflow
 import tensorflow as tf
