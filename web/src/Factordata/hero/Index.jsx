@@ -1,5 +1,5 @@
 import back1 from "../../assets/pic1.jpg";
-function Headda() {
+const Headda = () => {
   return (
     <div
       className="hero min-h-screen"
@@ -19,6 +19,6 @@ function Headda() {
       </div>
     </div>
   );
-}
+};
 
 export default Headda;
