@@ -52,29 +52,35 @@ const Main = () => {
   return (
     <div className="main">
       <Headda />
-      <div className="p-4">
-        <h2 className="text-2xl font-bold mb-4">Select Factors</h2>
-        <div className="flex flex-wrap gap-4">
-          {factorOptions.map((factor) => (
-            <label key={factor} className="flex items-center">
-              <input
-                type="checkbox"
-                value={factor}
-                checked={selectedFactors.includes(factor)}
-                onChange={handleFactorChange}
-                className="checkbox checkbox-primary"
-              />
-              <span className="ml-2">{factor}</span>
-            </label>
-          ))}
+      <div className="flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="flex flex-col items-center w-full max-w-5xl">
+          <div className="w-full mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-center">
+              Select Factors
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              {factorOptions.map((factor) => (
+                <label key={factor} className="flex items-center">
+                  <input
+                    type="checkbox"
+                    value={factor}
+                    checked={selectedFactors.includes(factor)}
+                    onChange={handleFactorChange}
+                    className="checkbox checkbox-primary"
+                  />
+                  <span className="ml-2">{factor}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+          <div className="w-full">
+            {data.length > 0 ? (
+              <FactorChart data={data} selectedFactors={selectedFactors} />
+            ) : (
+              <p className="text-center">Loading data...</p>
+            )}
+          </div>
         </div>
-      </div>
-      <div className="p-4">
-        {data.length > 0 ? (
-          <FactorChart data={data} selectedFactors={selectedFactors} />
-        ) : (
-          <p>Loading data...</p>
-        )}
       </div>
     </div>
   );

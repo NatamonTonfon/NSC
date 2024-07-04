@@ -1,6 +1,6 @@
 const Why = () => {
   return (
-    <div className="p-10 bg-gray-50 text-center   ">
+    <div className="p-20 bg-gray-50 text-center   ">
       <h2 className="text-4xl font-bold mb-12">
         <span className="text-accent text-5xl">3</span>{" "}
         เหตุผลที่ควรลงทุนด้วยปัจจัย ?
