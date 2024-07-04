@@ -1,36 +1,59 @@
-// src/FactorChart.js
 import PropTypes from "prop-types";
-import { Line } from "react-chartjs-2";
-import "chart.js/auto";
-
-const getRandomColor = () => {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-};
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+} from "recharts";
+import * as d3 from "d3";
 
 const FactorChart = ({ data, selectedFactors }) => {
-  const labels = data.map((item) => item.Date);
-  const datasets = selectedFactors.map((factor) => ({
-    label: factor,
-    data: data.map((item) => parseFloat(item[factor])),
-    fill: false,
-    borderColor: getRandomColor(),
-  }));
-
-  const chartData = {
-    labels,
-    datasets,
+  const factorColors = {
+    mkt: "#ff7300",
+    smb: "#387908",
+    hml: "#8884d8",
+    rmw: "#8a2be2",
+    cma: "#ff1493",
+    umd: "#1e90ff",
   };
 
-  return <Line data={chartData} />;
+  return (
+    <LineChart width={800} height={500} data={data}>
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis
+        dataKey="date"
+        tickFormatter={(date) => d3.timeFormat("%Y-%m-%d")(date)}
+      />
+      <YAxis />
+      <Tooltip labelFormatter={(label) => d3.timeFormat("%Y-%m-%d")(label)} />
+      <Legend />
+      {selectedFactors.map((factor) => (
+        <Line
+          key={factor}
+          type="monotone"
+          dataKey={factor}
+          stroke={factorColors[factor]}
+        />
+      ))}
+    </LineChart>
+  );
 };
 
 FactorChart.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      date: PropTypes.instanceOf(Date).isRequired,
+      mkt: PropTypes.number,
+      smb: PropTypes.number,
+      hml: PropTypes.number,
+      rmw: PropTypes.number,
+      cma: PropTypes.number,
+      umd: PropTypes.number,
+    })
+  ).isRequired,
   selectedFactors: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
