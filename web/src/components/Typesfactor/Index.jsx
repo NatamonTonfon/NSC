@@ -7,11 +7,13 @@ function Types() {
       case "macroeconomic":
         return (
           <div>
-            <h3 className="text-2xl font-bold">
+            <h3 className="text-2xl text-center font-bold">
               Macroeconomic factors capture broad risks that exist across asset
               classes.
             </h3>
-            <p className="text-gray-600">Content for Style factors...</p>
+            <p className="text-gray-600 text-center">
+              Content for Style factors...
+            </p>
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="card shadow-lg p-4 bg-white rounded-lg">
                 <div className="text-5xl mb-4 text-green-500">💳</div>
@@ -59,11 +61,13 @@ function Types() {
       case "style":
         return (
           <div>
-            <h3 className="text-2xl font-bold">
+            <h3 className="text-2xl text-center font-bold">
               Style factors help to explain returns and risk within asset
               classes.
             </h3>
-            <p className="text-gray-600">Content for Style factors...</p>
+            <p className="text-gray-600 text-center">
+              Content for Style factors...
+            </p>
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="card shadow-lg p-4 bg-white rounded-lg">
                 <div className="text-5xl mb-4 text-green-500">💳</div>
@@ -114,7 +118,7 @@ function Types() {
   };
 
   return (
-    <div className="p-7 bg-gray-50">
+    <div className="p-10 bg-gray-50">
       <div className="text-center mb-6">
         <h2 className="text-4xl font-bold mb-5">ประเภทของปัจจัย</h2>
         <p className="text-gray-600 ">

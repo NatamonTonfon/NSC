@@ -84,7 +84,7 @@ function Navbar() {
           to="/sign-in"
           className="btn btn-outline btn-accenbtn btn-outline btn-accent"
         >
-          Sign in
+          เริ่มต้นการลงทุน
         </Link>
       </div>
     </div>

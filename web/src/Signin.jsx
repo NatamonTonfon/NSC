@@ -3,7 +3,7 @@ function Signin() {
     <div className="hero bg-base-200 min-h-screen flex items-center justify-center">
       <div className="flex flex-col items-center w-full max-w-4xl">
         <div className="text-center ">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className="text-5xl font-bold">เริ่มการลงทุนเลยตอนนี้!</h1>
           <p
             className="py-6
           "
