@@ -1,7 +1,7 @@
-import Hero from "./components/Hero/Index";
-import Why from "./components/Why/Index";
-import Types from "./components/Typesfactor/Index";
-import Welcome from "./components/welcome/index";
+import Hero from "./Hero/Index";
+import Why from "./Why/Index";
+import Types from "./Typesfactor/Index";
+import Welcome from "./welcome/index";
 export default function Home() {
   return (
     <div>

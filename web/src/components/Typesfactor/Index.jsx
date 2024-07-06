@@ -120,7 +120,7 @@ function Types() {
   return (
     <div className="p-10 bg-gray-50">
       <div className="text-center mb-6">
-        <h2 className="text-4xl font-bold mb-5">ประเภทของปัจจัย</h2>
+        <h2 className="text-4xl font-bold mb-5 ">ประเภทของปัจจัย</h2>
         <p className="text-gray-600 ">
           There are two main types of factors that have driven returns:
           macroeconomic factors, which capture broad risks across asset classes;
