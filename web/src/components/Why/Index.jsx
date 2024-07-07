@@ -2,12 +2,12 @@ const Why = () => {
   return (
     <div className="p-20 bg-gray-50 text-center   ">
       <h2 className="text-4xl font-bold mb-12">
-        <span className="text-accent text-5xl">3</span>{" "}
+        <span className="text-teal-500 text-5xl">3</span>{" "}
         เหตุผลที่ควรลงทุนด้วยปัจจัย ?
       </h2>
       <div className="flex justify-around items-start">
         <div className="max-w-xs">
-          <div className="bg-accent text-white rounded-full w-16 h-16 flex justify-center items-center mx-auto mb-4 text-2xl">
+          <div className="bg-teal-500 text-white rounded-full w-16 h-16 flex justify-center items-center mx-auto mb-4 text-2xl">
             1
           </div>
           <h3 className="text-xl mb-2">ปัจจัยบ่งบอกถึงสภาพเศรษฐกิจ</h3>
@@ -17,7 +17,7 @@ const Why = () => {
           </p>
         </div>
         <div className="max-w-xs">
-          <div className="bg-accent text-white rounded-full w-16 h-16 flex justify-center items-center mx-auto mb-4 text-2xl">
+          <div className="bg-teal-500 t text-white rounded-full w-16 h-16 flex justify-center items-center mx-auto mb-4 text-2xl">
             2
           </div>
           <h3 className="text-xl mb-2">ปัจจัยบ่งบอกถึงสภาพเศรษฐกิจ</h3>
@@ -27,7 +27,7 @@ const Why = () => {
           </p>
         </div>
         <div className="max-w-xs">
-          <div className="bg-accent text-white rounded-full w-16 h-16 flex justify-center items-center mx-auto mb-4 text-2xl">
+          <div className="bg-teal-500 text-white rounded-full w-16 h-16 flex justify-center items-center mx-auto mb-4 text-2xl">
             3
           </div>
           <h3 className="text-xl mb-2">ปัจจัยบ่งบอกถึงสภาพเศรษฐกิจ</h3>

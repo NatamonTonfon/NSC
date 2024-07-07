@@ -14,7 +14,7 @@ function Headro() {
           <p className="mb-5">
             หมุนเวียนปัจจัยให้ตรงตามเศรษฐกิจเพื่อเพิ่มประสิทธิภาพในการลงทุนด้วยปัจจัย
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-accent">เริ่มต้นลงทุน</button>
         </div>
       </div>
     </div>

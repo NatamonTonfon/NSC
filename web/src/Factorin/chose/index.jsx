@@ -1,7 +1,7 @@
 function Chose() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
+      <h1 className="text-3xl font-bold text-center text-teal-600 mb-8">
         คลิกอ่านหัวข้อที่คุณสนใจ
       </h1>
       <ul className="list-disc list-inside space-y-4 text-lg text-center">

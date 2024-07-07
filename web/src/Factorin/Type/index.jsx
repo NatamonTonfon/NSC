@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 function FactorCard({ title, description, details }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 text-center w-64 mx-2">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <h3 className="text-xl font-bold mb-2 text-gray-700">{title}</h3>
       <p className="text-gray-700 mb-4">{description}</p>
       <p className="text-gray-600">{details}</p>
     </div>
