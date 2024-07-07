@@ -1,10 +1,12 @@
 import Hero from "../hero";
-import Chose from "../chose";
+
+import MainContent from "../What";
 export default function Homein() {
   return (
     <div>
       <Hero />
-      <Chose />
+
+      <MainContent />
     </div>
   );
 }
