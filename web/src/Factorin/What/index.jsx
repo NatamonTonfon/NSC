@@ -7,7 +7,7 @@ function MainContent() {
     <div>
       <Chose />
       <section>
-        <img src={money} alt="Money Divider" className="w-full h-80" />
+        <img src={money} alt="Money Divider" className="w-full h-auto" />
       </section>
       <section id="factor-investing">
         <div className="flex  flex-col items-center p-12">
