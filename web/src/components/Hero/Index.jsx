@@ -10,11 +10,12 @@ function Hero() {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Factor Investing ?</h1>
-          <p className="mb-5">
-            หมุนเวียนปัจจัยให้ตรงตามเศรษฐกิจเพื่อเพิ่มประสิทธิภาพในการลงทุนด้วยปัจจัย
+          <h1 className="mb-5 text-6xl font-bold">Factor Investing ?</h1>
+          <p className="mb-5 text-xl">
+            การเลือกลงทุนตามปัจจัยที่มีผลต่อตลาด สร้างผลตอบแทนเหนือตลาดได้ ง่าย
+            สะดวก ประหยัดวลา
           </p>
-          <button className="btn btn-accent">Get Started</button>
+          <button className="btn btn-warning">สำรวจให้มากขึ้น</button>
         </div>
       </div>
     </div>

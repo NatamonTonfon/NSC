@@ -80,8 +80,11 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
+        <Link to="/sign-in" className="btn btn-active btn-link text-white">
+          สร้างบัญชี
+        </Link>
         <Link
-          to="/sign-in"
+          to="/log-in"
           className="btn btn-outline btn-accenbtn btn-outline btn-accent"
         >
           เริ่มต้นการลงทุน

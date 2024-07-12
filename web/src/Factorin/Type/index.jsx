@@ -81,7 +81,7 @@ function FactorsSection() {
       <div className="relative w-full overflow-hidden">
         <button
           onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-teal-500 text-white rounded-full p-3 z-10"
+          className="absolute  left-0 top-1/4 transform -translate-y-1/2 bg-teal-500 text-white  w-12 h-12 rounded-full "
         >
           &lt;
         </button>
@@ -107,7 +107,7 @@ function FactorsSection() {
         </div>
         <button
           onClick={scrollRight}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-teal-500 text-white rounded-full p-3 z-10"
+          className="absolute right-0 top-1/4 transform -translate-y-1/2 bg-teal-500 text-white w-12 h-12 rounded-full"
         >
           &gt;
         </button>

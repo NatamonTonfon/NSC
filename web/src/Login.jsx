@@ -1,4 +1,4 @@
-function Signin() {
+function Login() {
   return (
     <div className="hero bg-base-200 min-h-screen flex items-center justify-center">
       <div className="flex flex-col items-center w-full max-w-4xl">
@@ -40,14 +40,19 @@ function Signin() {
                 </a>
               </label>
             </div>
-            <div className="form-control mt-6">
-              <button className="btn btn-accent">Login</button>
-            </div>
+
+            <button className="btn btn-accent">Login</button>
           </form>
+          <p className="text-center mt-4 ">
+            คุณมีบัญชีหรือยัง?{" "}
+            <a href="/sign-in" className="text-teal-500">
+              สร้างบัญชี
+            </a>
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Signin;
+export default Login;

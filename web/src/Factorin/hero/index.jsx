@@ -19,10 +19,10 @@ function Hero() {
           </h2>
           <ul className="list-disc list-inside mb-5 text-xl">
             <li className="mb-2">ลงทุนระยะยาวอย่างมีหลักการ</li>
-            <li className="mb-2">ค่าธรรมเนียมการจัดการ 0.5% ต่อปี</li>
-            <li className="mb-2">บริหารและปรับพอร์ตอัตโนมัติ</li>
+            <li className="mb-2">สร้างผลตอบแทนเหนือตลาด</li>
+            <li className="mb-2">เข้าใจง่าย ประหยัดเวลา</li>
           </ul>
-          <button className="btn btn-accent">เริ่มต้นลงทุน</button>
+          <button className="btn btn-warning">เริ่มต้นลงทุน</button>
         </div>
       </div>
     </div>
